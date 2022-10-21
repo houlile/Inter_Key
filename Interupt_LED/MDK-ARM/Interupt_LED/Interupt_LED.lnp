@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"interupt_led\startup_stm32f103xb.o"
+"interupt_led\main.o"
+"interupt_led\gpio.o"
+"interupt_led\stm32f1xx_it.o"
+"interupt_led\stm32f1xx_hal_msp.o"
+"interupt_led\system_stm32f1xx.o"
+"interupt_led\stm32f1xx_hal_gpio_ex.o"
+"interupt_led\stm32f1xx_hal_tim.o"
+"interupt_led\stm32f1xx_hal_tim_ex.o"
+"interupt_led\stm32f1xx_hal.o"
+"interupt_led\stm32f1xx_hal_rcc.o"
+"interupt_led\stm32f1xx_hal_rcc_ex.o"
+"interupt_led\stm32f1xx_hal_gpio.o"
+"interupt_led\stm32f1xx_hal_dma.o"
+"interupt_led\stm32f1xx_hal_cortex.o"
+"interupt_led\stm32f1xx_hal_pwr.o"
+"interupt_led\stm32f1xx_hal_flash.o"
+"interupt_led\stm32f1xx_hal_flash_ex.o"
+"interupt_led\stm32f1xx_hal_exti.o"
+--strict --scatter "Interupt_LED\Interupt_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Interupt_LED.map" -o Interupt_LED\Interupt_LED.axf
